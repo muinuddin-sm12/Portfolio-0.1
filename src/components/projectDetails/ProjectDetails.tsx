@@ -30,7 +30,7 @@ const ProjectDetails = ({ id }: { id: string }) => {
   return (
     <Container>
       <div className="py-8">
-        <div className="w-full  rounded-3xl overflow-hidden bg-sky-100">
+        <div className="w-full  rounded-3xl overflow-hidden bg-gray-50">
           <Image
             className="object-cover h-full"
             src={data.image}
