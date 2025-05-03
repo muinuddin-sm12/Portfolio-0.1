@@ -20,11 +20,17 @@ const ProjectDetails = ({ id }: { id: string }) => {
   if (!data) {
     return <p>Loading...</p>;
   }
+  const handleLiveLinkRedirect = () => {
+    window.open(data.liveLink, '_blank')
+  }
+  const handleGithubLinkRedirect = () => {
+    window.open(data.githubLink, '_blank')
+  }
   console.log(data);
   return (
     <Container>
       <div className="py-8">
-        <div className="w-full h-[500px] rounded-3xl overflow-hidden bg-sky-100">
+        <div className="w-full  rounded-3xl overflow-hidden bg-sky-100">
           <Image
             className="object-cover h-full"
             src={data.image}
@@ -36,7 +42,7 @@ const ProjectDetails = ({ id }: { id: string }) => {
         <div className="py-6">
           <div className="flex items-center gap-2">
             <h1 className="text-2xl font-[600] text-gray-800">{data.title}</h1>
-            <button className="px-2 flex py-2 cursor-pointer leading-none rounded-full border group relative">
+            <button onClick={handleLiveLinkRedirect} className="px-2 flex py-2 cursor-pointer leading-none rounded-full border group relative">
               <span className="relative  inline-flex overflow-hidden">
                 <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-6">
                   <Image src={Icon} alt="icon" height={20} width={20} />
@@ -46,7 +52,7 @@ const ProjectDetails = ({ id }: { id: string }) => {
                 </div>
               </span>
             </button>
-            <button className="px-2 flex py-2 cursor-pointer leading-none rounded-full border group relative">
+            <button onClick={handleGithubLinkRedirect} className="px-2 flex py-2 cursor-pointer leading-none rounded-full border group relative">
               <span className="relative  inline-flex overflow-hidden">
                 <div className="translate-y-0 skew-y-0 transition duration-500 group-hover:-translate-y-[110%] group-hover:skew-y-6">
                   <Image src={Github} alt="icon" height={20} width={20} />
