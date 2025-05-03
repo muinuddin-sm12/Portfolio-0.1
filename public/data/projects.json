@@ -1,0 +1,79 @@
+[
+    {
+      "id": "project-01",
+      "title": "Meal Planning & Delivery Site",
+      "slug": "🛠️ utility-app",
+      "tagline": "Customized meal planning & delivery service for all dietary needs.",
+      "overview": "Meal Box is a web app for personalized meal planning and delivery. Customers can choose meals based on preferences, while providers manage menus and orders.",
+      "features": [
+        "Custom login for customers and meal providers with JWT & bcrypt",
+        "Separate dashboards for customers and providers",
+        "Meal customization based on dietary needs (vegan, keto, etc.)",
+        "Search & match meals based on preferences and ratings",
+        "Role-based access control (Customer, Provider, Admin)",
+        "CRUD operations for orders, profiles, and menus"
+      ],
+      "image": "https://res.cloudinary.com/dxexn7tik/image/upload/v1746223885/project-1_kaydds.jpg",
+      "technologies": ["Next.js", "Tailwind", "Node.js", "TypeScript", "Express", "MongoDB"],
+      "liveLink": "https://meal-craft-client.vercel.app",
+      "githubLink": "https://github.com/muinuddin-sm12/MealCraft-client"
+    },
+    {
+      "id": "project-02",
+      "title": "Wheel Spot - 🚗Car Shop",
+      "slug": "🛒 ecommerce-app",
+      "overview": "A full-featured car shop platform with secure role-based authentication, dynamic product management, responsive UI/UX, and integrated payment system.",
+      "features": [
+        "Role-based access for admin and users",
+        "All products page with search and filters",
+        "Detailed product page with buy functionality",
+        "Checkout with SurjoPay integration",
+        "Admin dashboard for managing users, products, and orders",
+        "User dashboard for viewing orders and updating profile",
+        "Track order status with progress updates"
+      ],
+      "image": "https://res.cloudinary.com/dxexn7tik/image/upload/v1746223885/project-2_iezcib.jpg",
+      "technologies": ["React.js", "Tailwind", "Node.js", "TypeScript","Express", "MongoDB" ],
+      "liveLink": "https://wheel-spot-client.vercel.app",
+      "githubLink": "https://github.com/muinuddin-sm12/WheelSpot-client"
+
+    },
+    {
+      "id": "project-03",
+      "title": "Matrimony Website",
+      "slug": "❤️ match-making-app",
+      "tagline": "A responsive MERN-based platform for finding your life partner.",
+      "overview": "This Matrimony web app helps users find life partners by filtering biodatas based on preferences. It features role-based access, premium membership benefits, biodata management, and contact info requests via Stripe payment.",
+      "features": [
+        "Private route protection with persistent login (no redirect after reload)",
+        "Premium membership with special biodata viewing privileges",
+        "Dynamic biodata filtering by age, gender, division",
+        "Success story section sorted by marriage date",
+        "Admin dashboard to approve contact info requests"
+      ],
+      "image": "https://res.cloudinary.com/dxexn7tik/image/upload/v1746223886/project-3_b5w2bm.jpg",
+      "technologies": ["React.js", "Tailwind", "Node.js", "Express.js", "MongoDB", "TanStack Query"],
+      "liveLink": "https://life-partner-client.vercel.app",
+      "githubLink": "https://github.com/muinuddin-sm12/lifePartner-client"
+    },
+    {
+      "id": "project-04",
+      "title": "Refocus Landing Page",
+      "slug": "✨ creative-agency-clone",
+      "tagline": "A pixel-perfect clone of the Refokus agency site with smooth animations and scroll effects.",
+      "overview": "This project replicates the Refokus agency website using modern frontend technologies. It features smooth scrolling, interactive animations, and a responsive design that mirrors the original site's aesthetics.",
+      "features": [
+        "Responsive layout optimized for desktop and mobile devices",
+        "Smooth scrolling implemented with Locomotive Scroll",
+        "Interactive animations powered by GSAP and Shery.js",
+        "Component-based architecture using React.js",
+        "Custom hover effects and scroll-triggered animations",
+        "Optimized performance with lazy loading and efficient asset management"
+      ],
+      "image": "https://res.cloudinary.com/dxexn7tik/image/upload/v1746223888/project-4_d6gjkw.jpg",
+      "technologies": ["React.js", "Tailwind", "Locomotive Scroll", "GSAP", "Shery.js"],
+      "liveLink": "https://refokus-clone-website.netlify.app",
+      "githubLink": "https://github.com/muinuddin-sm12/refokus-clone"
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ff652f;
+    z-index: 9999;
+}
+.text {
+    font-size: 3rem;
+    font-family: "Kind Kids", sans-serif;
+    stroke-width: 2px;
+    fill: transparent;
+    stroke: #fff;
+    letter-spacing: 4px;
+    animation: effect 4s linear;
+}
+@keyframes effect {
+    0% {
+        stroke-dasharray: 0 70%;
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}
