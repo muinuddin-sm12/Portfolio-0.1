@@ -7,6 +7,12 @@
     background: #ff652f;
     z-index: 9999;
 }
+@font-face {
+    font-family: "Kind Kids";
+    src: url("/fonts/kind-kids.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
 .text {
     font-size: 3rem;
     font-family: "Kind Kids", sans-serif;

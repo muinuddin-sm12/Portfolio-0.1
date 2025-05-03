@@ -11,7 +11,7 @@ const Preloader = () => {
     gsap.to(containRef.current, {
       y: "-100%",
       duration: 1,
-      delay: 2,
+      delay: 3,
       ease: "power2.out",
     });
   }, []);

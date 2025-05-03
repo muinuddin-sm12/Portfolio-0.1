@@ -1,6 +1,5 @@
 import React from "react"
 
-/* eslint-disable react/prop-types */
 const Container = ({ children }: {children: React.ReactNode}) => {
     return (
       <div className='max-w-screen-lg mx-auto px-6 xl:px-20 md:px-10 sm:px-2'>
