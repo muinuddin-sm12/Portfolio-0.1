@@ -25,12 +25,12 @@ const Banner = () => {
           </div>
           {/* image */}
           <div className="flex items-center justify-center">
-            <div className="relative h-40 w-40  md:h-48 md:w-48 object-cover">
+            <div className="relative h-44 w-44  md:h-48 md:w-48 object-cover">
               <Image
                 className="absolute w-full rounded-xl h-full duration-200 z-10"
                 src={MyImg}
-                height={100}
-                width={100}
+                height={200}
+                width={200}
                 alt="photo"
               />
               <div className="absolute border rounded-tr-xl border-[#ff652f] top-[-6px] right-[-6px] h-[50%] w-[50%]"></div>
