@@ -6,7 +6,7 @@ import React from "react";
 import Container from "../shared/Container";
 import { FaPhone } from "react-icons/fa";
 import { HiEnvelope } from "react-icons/hi2";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -21,7 +21,7 @@ import Image from "next/image";
 import { toast } from "sonner";
 
 const Contact = () => {
-  const form = useForm();
+  const form = useForm<FieldValues>();
 
   const {
     formState: { isSubmitting },
@@ -42,8 +42,10 @@ const Contact = () => {
       const res = await response.json();
       console.log(res)
       if(res.success){
+        form.reset();
         toast.success("Message Sent Successfully")
       }else{
+        form.reset();
         toast.error(res.message)
       }
     } catch (error: any) {
@@ -135,14 +137,14 @@ const Contact = () => {
                 />
                 <button
                   type="submit"
-                  className="mt-5 cursor-pointer px-4 py-1 rounded-full text-white bg-[#ff652f] text-sm font-[600] "
+                  className="mt-5 cursor-pointer w-[85px] h-8 flex justify-center items-center px-4 py-1 rounded-full text-white bg-[#ff652f] text-sm font-[600] "
                 >
                   {isSubmitting ? (
                     <ImSpinner3 className="animate-spin text-center text-base flex items-center justify-center" />
                   ) : (
-                    <span className="flex items-center gap-1">
+                    <span className="flex items-center justify-between gap-1">
                       Send
-                      <IoIosPaperPlane />
+                      <IoIosPaperPlane  className="text-base"/>
                     </span>
                   )}
                 </button>
