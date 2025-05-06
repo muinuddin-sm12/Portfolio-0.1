@@ -12,7 +12,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Muin's Portfolio",
   description: "Muin's portfolio",
 };
 

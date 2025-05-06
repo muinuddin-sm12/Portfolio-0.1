@@ -6,7 +6,7 @@ import React from "react";
 import Container from "../shared/Container";
 import { FaPhone } from "react-icons/fa";
 import { HiEnvelope } from "react-icons/hi2";
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem, FormLabel } from "../ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -19,21 +19,27 @@ import Insta from "../../assets/social.png";
 import Link from "next/link";
 import Image from "next/image";
 import { toast } from "sonner";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { FormValidationSchema } from "../ContactFormValidation";
+import { IFrom } from "@/types/formValues";
 
 const Contact = () => {
-  const form = useForm<FieldValues>();
+  const form = useForm<IFrom>({
+    resolver: zodResolver(FormValidationSchema)
+  });
 
   const {
     formState: { isSubmitting },
+    reset
   } = form;
 
-  const onSubmit: SubmitHandler<any> = async (data) => {
+  const onSubmit: SubmitHandler<IFrom> = async (data) => {
     try {
       const formData = new FormData();
       formData.append("name", data.name);
       formData.append('email', data.email);
       formData.append('message', data.message);
-      formData.append('access_key', "3488a0cb-d4ec-4d70-b7ba-04a6c6cdeac7");
+      formData.append('access_key', `${process.env.WEB3_FORM_ACCESS_KEY}`);
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -42,14 +48,13 @@ const Contact = () => {
       const res = await response.json();
       console.log(res)
       if(res.success){
-        form.reset();
         toast.success("Message Sent Successfully")
+        reset();
       }else{
-        form.reset();
         toast.error(res.message)
       }
     } catch (error: any) {
-      console.log(error);
+      toast.error(error.message);
     }
     // console.log(data);
   };
@@ -59,7 +64,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row items-start gap-8 md:gap-0 justify-between rounded-2xl">
           <div className="flex flex-col gap-6 md:gap-12">
             <div>
-              <h1 className="text-3xl text-gray-800 md:pb-1">Let's talk</h1>
+              <h1 className="text-3xl text-gray-800 md:pb-1 font-[600]">Let's talk</h1>
               <p className="text-gray-500">Ask me anything or just say hi..</p>
             </div>
             <div>

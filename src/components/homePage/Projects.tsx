@@ -27,11 +27,11 @@ const Projects = () => {
   return (
     <Container>
       <div className="pb-20">
-        <h1 className="text-4xl pb-1 font-[600] border-b border-gray-200 ">
+        <h1 className="text-4xl pb-1 text-gray-800 font-[600] border-b border-gray-200 ">
           Projects<span className="text-[#ff652f]">.</span>
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 md:pt-14">
           {data?.map((singleData) => (
             <div
             onClick={() => handleRedirect(singleData.id)}
@@ -67,9 +67,10 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="flex flex-wrap gap-2">
+                {/* "Next.js", "Tailwind", "Node.js", "TypeScript", "Express", "MongoDB" */}
                   {singleData.technologies.map((tech, index) => (
                     <span
-                      className="px-2 font-[600] text-gray-400 leading-none py-1 text-[12px] rounded-full bg-gray-200"
+                      className="px-2 font-[600] text-gray-500 leading-none py-1 text-[12px] rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
                       key={index}
                     >
                       {tech}
