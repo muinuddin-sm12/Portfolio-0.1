@@ -30,7 +30,7 @@ const Skill = () => {
         <div className="pt-8 md:pt-14 ">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div className="pb-6 relative rounded-xl bg-gray-50 flex justify-center items-start">
-              <p className="px-2 text-[12px] absolute top-2 left-2 py-1 text-sm rounded-md bg-orange-100">
+              <p className="px-2 text-[12px] absolute top-2 left-2 py-1 text-sm rounded-md bg-sky-100">
                 Front-end
               </p>
               <div className="grid grid-cols-4 gap-4 justify-center items-center mt-14">
