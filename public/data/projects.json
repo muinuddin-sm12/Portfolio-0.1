@@ -4,7 +4,7 @@
       "title": "Meal Planning & Delivery Site",
       "slug": "🛠️ utility-app",
       "tagline": "Customized meal planning & delivery service for all dietary needs.",
-      "overview": "Meal Box is a web app for personalized meal planning and delivery. Customers can choose meals based on preferences, while providers manage menus and orders.",
+      "overview": "Meal Craft is a weekly meal planning and delivery platform that allows customers to personalize their meals based on dietary preferences, while providers efficiently manage menus, orders, and scheduling through a dedicated dashboard.",
       "features": [
         "Custom login for customers and meal providers with JWT & bcrypt",
         "Separate dashboards for customers and providers",
@@ -22,7 +22,7 @@
       "id": "project-02",
       "title": "Wheel Spot - 🚗Car Shop",
       "slug": "🛒 ecommerce-app",
-      "overview": "A full-featured car shop platform with secure role-based authentication, dynamic product management, responsive UI/UX, and integrated payment system.",
+      "overview": "Wheel Spot is a full-stack car shop application where users can browse, filter, and purchase vehicles, while admins manage products, users, and orders. It features secure JWT-based authentication, role-based dashboards, and SurjoPay payment integration.",
       "features": [
         "Role-based access for admin and users",
         "All products page with search and filters",
@@ -43,7 +43,7 @@
       "title": "Matrimony Website",
       "slug": "❤️ match-making-app",
       "tagline": "A responsive MERN-based platform for finding your life partner.",
-      "overview": "This Matrimony web app helps users find life partners by filtering biodatas based on preferences. It features role-based access, premium membership benefits, biodata management, and contact info requests via Stripe payment.",
+      "overview": "Developed a responsive Matrimony web application using the MERN stack, featuring biodata listings, premium membership, and secure Stripe payments. Implemented user dashboards, role-based access, and real-time contact request management.",
       "features": [
         "Private route protection with persistent login (no redirect after reload)",
         "Premium membership with special biodata viewing privileges",

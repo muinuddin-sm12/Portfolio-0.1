@@ -17,10 +17,10 @@ const Navbar = () => {
 
   return (
     <Container>
-      <div className="flex items-center justify-between rounded-full px-3 py-4  transition-transform duration-500 border-gray-100 ">
-        <div>
+      <div className="flex items-center justify-between rounded-full px-4  bg-white shadow-md transition-transform duration-500 border-gray-100 ">
+        <div className="h-12 w-12 md:h-16 md:w-16 overflow-hidden">
           <Link href={"/"}>
-            <Image src={logo} height={60} width={60} alt="logo" />
+            <Image className="h-full w-full object-cover bg-center" src={logo} height={60} width={60} alt="logo" />
           </Link>
         </div>
         <div className="flex items-center">

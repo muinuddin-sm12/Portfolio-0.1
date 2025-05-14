@@ -3,6 +3,36 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Target the Swiper navigation buttons */
+.my-swiper .swiper-button-next,
+.my-swiper .swiper-button-prev {
+  color: #ff652f !important; /* your custom color */
+}
+
+/* Optional: Add hover effect */
+.my-swiper .swiper-button-next:hover,
+.my-swiper .swiper-button-prev:hover {
+  color: #e64a19 !important;
+}
+
+/* Change dot color */
+.my-swiper .swiper-pagination-bullet {
+  background: #ff652f !important; /* Default color */
+  opacity: 0.5;
+}
+
+/* Active dot */
+.my-swiper .swiper-pagination-bullet-active {
+  background: #e64a19 !important; /* Active color */
+  opacity: 1;
+}
+/* .custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  background-color: rgba(192, 51, 0, 0.1);
+  padding: 10px;
+  border-radius: 9999px;
+  font-size: 20px;
+} */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -118,6 +148,9 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+
+
+
 
 @layer base {
   * {

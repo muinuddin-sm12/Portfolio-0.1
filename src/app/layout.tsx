@@ -21,12 +21,27 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const pageRef = useRef<HTMLDivElement>(null);
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     pageRef.current,
+  //     { opacity: 0 },
+  //     {
+  //       opacity: 1,
+  //       duration: 1, // fade duration
+  //       delay: 2, // wait 2 seconds before starting
+  //       ease: "power2.out",
+  //     }
+  //   );
+  // }, []);
   return (
     <html lang="en">
-      <body className={`${nunito.className} antialiased `}>
+      <body className={`${nunito.className} antialiased relative`}>
         <Toaster richColors position="top-center" />
-        <Preloader/>
-        <Navbar/>
+        <Preloader />
+        <div className="sticky top-0 z-[999]">
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>
