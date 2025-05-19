@@ -1,6 +1,3 @@
-// import Image from "next/image";
-
-// import AboutMe from "@/components/homePage/AboutMe";
 import Banner from "@/components/homePage/Banner";
 import Certificates from "@/components/homePage/Certificates";
 import Contact from "@/components/homePage/Contact";

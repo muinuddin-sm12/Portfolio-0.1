@@ -15,7 +15,7 @@ const Projects = () => {
         setData(data);
       });
   }, []);
-  console.log(data);
+  // console.log(data);
   const router = useRouter()
   const handleRedirect = (id: string) => {
     router.push(`/projects/${id}`)

@@ -26,7 +26,7 @@ const ProjectDetails = ({ id }: { id: string }) => {
   const handleGithubLinkRedirect = () => {
     window.open(data.githubLink, '_blank')
   }
-  console.log(data);
+  // console.log(data);
   return (
     <Container>
       <div className="py-8">

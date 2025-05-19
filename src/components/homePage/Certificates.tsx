@@ -15,8 +15,8 @@ const certificateImages = [
   "/certificates/complete_web_development.jpg",
   "/certificates/front_end_domination.jpg",
   "/certificates/black_belt.png",
-  "/certificates/problem_solving_bootcamp.png",
-  "/certificates/web_development_bootcamp.png",
+  "/certificates/problem_solving_bootcamp.jpg",
+  "/certificates/web_development_bootcamp.jpg",
 ];
 
 export default function Certificates() {
@@ -48,7 +48,7 @@ export default function Certificates() {
                     height={300}
                     width={300}
                     alt={`Certificate ${index + 1}`}
-                    className="h-full object-cover"
+                    className="h-full w-full bg-center object-cover"
                   />
                 </div>
               </SwiperSlide>

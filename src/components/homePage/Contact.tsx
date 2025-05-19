@@ -12,10 +12,10 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { ImSpinner3 } from "react-icons/im";
 import { IoIosPaperPlane } from "react-icons/io";
-import WP from "../../assets/social (1).png";
+// import WP from "../../assets/social (1).png";
 import Github from "../../assets/github (1).png";
 import FB from "../../assets/facebook.png";
-import Insta from "../../assets/social.png";
+import LinkedIn from "../../assets/linkedin.png";
 import Link from "next/link";
 import Image from "next/image";
 import { toast } from "sonner";
@@ -46,7 +46,7 @@ const Contact = () => {
         body: formData
       })
       const res = await response.json();
-      console.log(res)
+      // console.log(res)
       if(res.success){
         toast.success("Message Sent Successfully")
         reset();
@@ -156,17 +156,17 @@ const Contact = () => {
               </form>
             </Form>
             <div className="flex ml-auto items-center gap-2 pt-10">
-              <Link href={"https://www.facebook.com/muinuddin.sm12"}>
-                <Image src={FB} height={20} width={20} alt="facebook" />
-              </Link>
-              <Link href={"/"}>
-                <Image src={Insta} height={20} width={20} alt="facebook" />
-              </Link>
-              <Link href={"/"}>
-                <Image src={WP} height={20} width={20} alt="facebook" />
-              </Link>
+              <Link href={"https://www.linkedin.com/in/muin-uddin"}>
+                <Image src={LinkedIn} height={20} width={20} alt="facebook" />
+                </Link>
+              {/* <Link href={"/"}>
+              <Image src={WP} height={20} width={20} alt="facebook" />
+              </Link> */}
               <Link href={"https://github.com/muinuddin-sm12"} target="_blank">
                 <Image src={Github} height={20} width={20} alt="facebook" />
+              </Link>
+              <Link href={"https://www.facebook.com/muinuddin.sm12"}>
+                <Image src={FB} height={20} width={20} alt="facebook" />
               </Link>
             </div>
           </div>

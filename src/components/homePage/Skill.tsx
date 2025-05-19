@@ -41,7 +41,7 @@ const Skill = () => {
             </div>
             <div className="pb-6 relative rounded-xl bg-gray-50 flex justify-center items-start">
               <p className="px-2 text-[12px] absolute top-2 left-2 py-1 text-sm rounded-md bg-sky-100">
-                Beck-end
+                Back-end
               </p>
               <div className="grid grid-cols-4 gap-4 justify-center items-center mt-14">
                 {beckEndStack.map((item, index) => (
