@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.className} antialiased relative`}>
+      <body className={`${nunito.className} antialiased relative `}>
         <Toaster richColors position="top-center" />
         {/* <Preloader /> */}
         <div className="sticky top-0 z-[999]">

@@ -10,3 +10,10 @@ export interface IProject{
     liveLink: string;
     githubLink: string
 }
+
+export interface ICertificate {
+    title: string;
+    description: string;
+    image: string;
+    color: string;
+}

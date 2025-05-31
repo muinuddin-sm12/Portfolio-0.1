@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Next Level Web Development Course",
+        "description": "Completely brand premier niche markets after collaborative information. Competently transform reliable networks via seamless intellectual capital. Monotonectally revolutionize process-centric solutions through.",
+        "image": "/certificates/next_level_web_development.jpg",
+        "color": "#e0e7ff"
+    },
+    {
+        "title": "Complete Web Development",
+        "description": "Completely brand premier niche markets after collaborative information. Competently transform reliable networks via seamless intellectual capital. Monotonectally revolutionize process-centric solutions through.",
+        "image": "/certificates/complete_web_development.jpg",
+        "color": "#ffe5ec"
+    },
+    {
+        "title": "Front-end Domination",
+        "description": "Completely brand premier niche markets after collaborative information. Competently transform reliable networks via seamless intellectual capital. Monotonectally revolutionize process-centric solutions through.",
+        "image": "/certificates/front_end_domination.jpg",
+        "color": "#e0f7fa"
+    },
+    {
+        "title": "Black Belt",
+        "description": "Completely brand premier niche markets after collaborative information. Competently transform reliable networks via seamless intellectual capital. Monotonectally revolutionize process-centric solutions through.",
+        "image": "/certificates/black_belt.png",
+        "color": "#f3e8ff"
+    }
+]
+

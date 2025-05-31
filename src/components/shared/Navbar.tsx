@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import Link from "next/link";
 import Container from "./Container";
 import CV from "../../assets/cv.png";
+import {motion, useScroll, useMotionValueEvent} from 'framer-motion'
 // const menuItems = [
 //   { _id: 1, name: "Home", path: "/" },
 //   { _id: 3, name: "About", path: "/about" },
@@ -14,10 +15,25 @@ import CV from "../../assets/cv.png";
 //   { _id: 4, name: "Contact", path: "/contact" },
 // ];
 const Navbar = () => {
-
+  const {scrollY} = useScroll() 
+  const [hidden, setHidden] = useState(false)
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious();
+    if(latest > previous! && latest > 150) {
+      setHidden(true )
+    }else{
+      setHidden(false);
+    }
+  })
   return (
     <Container>
-      <div className="flex items-center justify-between rounded-full px-4  bg-white shadow-md transition-transform duration-500 border-gray-100 ">
+      <motion.div variants={{
+        visible: {y:0},
+        hidden: {y: '-110%'}
+      }}
+      animate={hidden ? 'hidden' : 'visible'}
+      transition={{duration: 0.80, ease: 'easeInOut'}}
+       className="flex items-center justify-between rounded-full px-4  bg-white shadow-md transition-transform duration-500 border-gray-100 ">
         <div className="h-12 w-12 md:h-16 md:w-16 overflow-hidden">
           <Link href={"/"}>
             <Image className="h-full w-full object-cover bg-center" src={logo} height={60} width={60} alt="logo" />
@@ -49,7 +65,7 @@ const Navbar = () => {
             </span>
           </button> */}
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };
